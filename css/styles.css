@@ -1,0 +1,207 @@
+/* FONTS */
+@font-face {
+    font-family: cinzel-black.ttf;
+    src: url(Final Project\fonts\Cinzel\Cinzel-Black.ttf)
+}
+/* Lay out  */
+body { 
+    background-color: rgb(245, 211, 171);
+    margin: 0;
+    padding: 60px 50px 20px 50px;
+    font-family: 'Source Code Pro', monospace; 
+}
+
+p {
+    margin: 60px 80px 120px 80px;
+}
+
+/* Headers */
+h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: rgba(36, 68, 44, 0.623);
+    margin: 50px;
+    font-family: cinzel-black.ttf;
+    
+} 
+
+span {
+    color: tomato;
+    
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 150px;
+    font-family: cinzel-black.ttf;
+    
+}
+
+ /* adding an image to the back ground */
+
+
+/* Parallax display 1 */
+.parallax {
+
+    background-image: url(../img/ron-dauphin-zebra-unsplash.jpg); 
+    /* Set a hight */
+    height: 350px;
+    /* parallax scroll effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -100px -50px 0 -50px;
+    break-after: always;
+
+}
+
+.parallax2 {
+
+    background-image: url(../img/mohamed-nohassi-swim-good-unsplash.jpg); 
+    /* Set a hight */
+    height: 350px;
+    /* parallax scroll effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -100px -50px 0 -50px;
+    break-after: always;
+}
+
+.parallax3 {
+
+    background-image: url(../img/ninno-jackjr-women-working-unsplash.jpg); 
+    /* Set a hight */
+    height: 350px;
+    /* parallax scroll effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -100px -50px 0 -50px;
+    break-after: always;
+}
+
+/* Turn off parallax scrolling for all tablets and phones that have less than the required width. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+}
+
+
+/* Images on art page in a Gridformation*/
+.column {
+    float: left;
+    width: auto;
+    padding: 10px;
+    margin: 40px;
+
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns. Pseudo Function */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: left;
+    display: none;
+  }
+  
+
+
+/* Contact form text field */
+ 
+form {
+    text-align: center ;
+    margin: 50px;
+    padding: 10px;
+    border: solid thin rgba(3, 112, 30, 0.945);
+   
+}
+
+form div {
+    
+}
+
+form select {
+    text-align: left;
+    margin-right: auto;
+    display:inline-block;
+}
+
+form .input-width {
+    margin: 10px;
+    padding: 2px;
+    width: 30%;
+   
+}
+
+form .label-width {
+    width: 30%;
+    display: inline-block;
+    text-align: right;
+          
+} 
+
+/* NAV-BAR  */
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(111, 183, 216, 0.658);
+      
+}
+
+   /* Nav-Bar List style */
+   nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+   /*  NAV-BAR */
+   nav li {
+       float: left;       
+}
+
+/* NAV-BAR design */
+   nav a {
+        display: block;
+        padding: 20px
+
+}
+/* NAV-BAR Decoration for links in the Nav bar */
+   nav a:link,
+   nav a:visited {
+       color: white;
+       text-decoration: none;
+
+}
+/*  Nav-bar background and text change colour when cursor hovers over link  */
+   nav a:hover {
+        background-color: rgb(168, 168, 168);
+        color: black;
+
+}
+
+/* stop floating */
+.clearfix {
+    clear: both;
+}

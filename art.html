@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+    <div class="parallax">
+        <br><br><br>
+        <h1>AKOMA ART</h1>
+    </div>
+
+    <nav>          
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="art.html">ART</a></li>
+        <li><a href="our_mission_page.html">OUR MISSION</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact_form.html">CONTACT</a></li>
+        <div class="clearfix"></div>
+    </ul>
+
+</nav>
+
+<div class="parallax"></div>
+ 
+
+<!-- The grid: four columns -->
+<div class="row">
+    <div class="column">
+      <img width="500px" src="img/Ezter-in-Slovenia-2018-(3).JPG" alt="trainstation" onclick="myFunction(this);">
+      
+    </div>
+    <div class="column">
+      <img width="60%" src="img/gabriel-kiprono-unsplash.jpg" alt="leaf" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img width="50%" class="clearfix" src="img/marc-lamy-unsplash.jpg" alt="Mountains" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img width="80%%" class="clearfix" src="img/mpumelelo-macu-face-paint-unsplash.jpg" alt="Lights" onclick="myFunction(this);">
+    </div>
+  </div>
+  
+  <!-- The expanding image container -->
+  <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>
+    
+</body>
+</html>
